@@ -16,7 +16,7 @@ A RESTful API built using **Node.js**, **Express**, and **PostgreSQL** to manage
 ---
 
 ## 📁 Folder Structure
-event-management-backend/
+```event-management-backend/
 ├── config/
 │   └── db.js                # PostgreSQL DB connection
 │   └── initDb.js            # Table creation logic
@@ -35,7 +35,7 @@ event-management-backend/
 ├── index.js                 # Entry point – sets up Express, routes, DB connect
 ├── package.json
 └── README.md                # Placeholder README (needs content)
-
+```
 
 
 ---
@@ -121,10 +121,11 @@ Request Body:
 }
 ```
 ###Constraints:
+```
 Cannot register for past events
 Cannot register if event is full
 No duplicate registrations
-
+```
 Response:
 ```bash
 {
@@ -165,8 +166,10 @@ Response:
 }
 ```
 ###Sorted by:
+```
 First: datetime ASC
 Then: location ASC
+```
 
 ### 📊 Event Statistics
 GET /event/stats/:eventId
